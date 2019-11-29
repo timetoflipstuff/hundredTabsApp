@@ -59,7 +59,10 @@ class MainTableVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //navigatiorController?.pushViewController(контроллер с пикчей селла)
+        let expandedView = MainTableCellExpandedVC()
+        expandedView.imgView.image = cells[indexPath.row].img
+        expandedView.title = "Cell #\(indexPath.row + 1)"
+        navigationController?.pushViewController(expandedView, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

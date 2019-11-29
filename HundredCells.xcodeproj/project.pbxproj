@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E65D2CB42391826100FA1BE8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65D2CB32391826100FA1BE8 /* NetworkManager.swift */; };
+		E65D2CB6239187ED00FA1BE8 /* MainTableCellExpandedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65D2CB5239187ED00FA1BE8 /* MainTableCellExpandedVC.swift */; };
 		E6DFA6F2238B0ED0008BF8AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DFA6F1238B0ED0008BF8AB /* AppDelegate.swift */; };
 		E6DFA6F4238B0ED0008BF8AB /* MainTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DFA6F3238B0ED0008BF8AB /* MainTableVC.swift */; };
 		E6DFA6F7238B0ED0008BF8AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6DFA6F5238B0ED0008BF8AB /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		E65D2CB32391826100FA1BE8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E65D2CB5239187ED00FA1BE8 /* MainTableCellExpandedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableCellExpandedVC.swift; sourceTree = "<group>"; };
 		E6DFA6EE238B0ED0008BF8AB /* HundredCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HundredCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DFA6F1238B0ED0008BF8AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6DFA6F3238B0ED0008BF8AB /* MainTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableVC.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				E6DFA6FA238B0ED3008BF8AB /* LaunchScreen.storyboard */,
 				E6DFA6FD238B0ED3008BF8AB /* Info.plist */,
 				E65D2CB32391826100FA1BE8 /* NetworkManager.swift */,
+				E65D2CB5239187ED00FA1BE8 /* MainTableCellExpandedVC.swift */,
 			);
 			path = HundredCells;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E65D2CB42391826100FA1BE8 /* NetworkManager.swift in Sources */,
+				E65D2CB6239187ED00FA1BE8 /* MainTableCellExpandedVC.swift in Sources */,
 				E6DFA704238B114D008BF8AB /* MainTableVCCell.swift in Sources */,
 				E6DFA6F4238B0ED0008BF8AB /* MainTableVC.swift in Sources */,
 				E6DFA6F2238B0ED0008BF8AB /* AppDelegate.swift in Sources */,
