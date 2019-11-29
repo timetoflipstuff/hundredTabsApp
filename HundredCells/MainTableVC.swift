@@ -25,8 +25,12 @@ class MainTableVC: UITableViewController {
         tableView.register(MainTableVCCell.self
             , forCellReuseIdentifier: MainTableVCCell.reuseId)
         
-        self.loadVisibleCellsImages()
         
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.loadVisibleCellsImages()
     }
     
     private func loadVisibleCellsImages() {
@@ -60,7 +64,9 @@ class MainTableVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let expandedView = MainTableCellExpandedVC()
-        expandedView.imgView.image = cells[indexPath.row].img
+        if let img = cells[indexPath.row].img {
+            expandedView.imgView.image = img
+        }
         expandedView.title = "Cell #\(indexPath.row + 1)"
         navigationController?.pushViewController(expandedView, animated: true)
     }
