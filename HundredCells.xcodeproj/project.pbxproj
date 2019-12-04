@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		E65D2CB42391826100FA1BE8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65D2CB32391826100FA1BE8 /* NetworkManager.swift */; };
 		E65D2CB6239187ED00FA1BE8 /* MainTableCellExpandedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65D2CB5239187ED00FA1BE8 /* MainTableCellExpandedVC.swift */; };
+		E6AE597C2397FC73007C01E3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE597B2397FC73007C01E3 /* CoreDataManager.swift */; };
+		E6AE597E2397FD19007C01E3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE597D2397FD19007C01E3 /* CoreDataStack.swift */; };
+		E6AE59802397FD67007C01E3 /* MOImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE597F2397FD67007C01E3 /* MOImage.swift */; };
+		E6AE59832397FE38007C01E3 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6AE59812397FE37007C01E3 /* DataModel.xcdatamodeld */; };
 		E6DFA6F2238B0ED0008BF8AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DFA6F1238B0ED0008BF8AB /* AppDelegate.swift */; };
 		E6DFA6F4238B0ED0008BF8AB /* MainTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DFA6F3238B0ED0008BF8AB /* MainTableVC.swift */; };
 		E6DFA6F7238B0ED0008BF8AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6DFA6F5238B0ED0008BF8AB /* Main.storyboard */; };
@@ -20,6 +24,10 @@
 /* Begin PBXFileReference section */
 		E65D2CB32391826100FA1BE8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E65D2CB5239187ED00FA1BE8 /* MainTableCellExpandedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableCellExpandedVC.swift; sourceTree = "<group>"; };
+		E6AE597B2397FC73007C01E3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		E6AE597D2397FD19007C01E3 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		E6AE597F2397FD67007C01E3 /* MOImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOImage.swift; sourceTree = "<group>"; };
+		E6AE59822397FE38007C01E3 /* Image.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Image.xcdatamodel; sourceTree = "<group>"; };
 		E6DFA6EE238B0ED0008BF8AB /* HundredCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HundredCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DFA6F1238B0ED0008BF8AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6DFA6F3238B0ED0008BF8AB /* MainTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableVC.swift; sourceTree = "<group>"; };
@@ -60,8 +68,12 @@
 		E6DFA6F0238B0ED0008BF8AB /* HundredCells */ = {
 			isa = PBXGroup;
 			children = (
+				E6AE59812397FE37007C01E3 /* DataModel.xcdatamodeld */,
 				E6DFA6F1238B0ED0008BF8AB /* AppDelegate.swift */,
 				E6DFA6F3238B0ED0008BF8AB /* MainTableVC.swift */,
+				E6AE597B2397FC73007C01E3 /* CoreDataManager.swift */,
+				E6AE597D2397FD19007C01E3 /* CoreDataStack.swift */,
+				E6AE597F2397FD67007C01E3 /* MOImage.swift */,
 				E6DFA703238B114D008BF8AB /* MainTableVCCell.swift */,
 				E6DFA6F5238B0ED0008BF8AB /* Main.storyboard */,
 				E6DFA6F8238B0ED3008BF8AB /* Assets.xcassets */,
@@ -144,11 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6AE597E2397FD19007C01E3 /* CoreDataStack.swift in Sources */,
+				E6AE597C2397FC73007C01E3 /* CoreDataManager.swift in Sources */,
 				E65D2CB42391826100FA1BE8 /* NetworkManager.swift in Sources */,
+				E6AE59832397FE38007C01E3 /* DataModel.xcdatamodeld in Sources */,
 				E65D2CB6239187ED00FA1BE8 /* MainTableCellExpandedVC.swift in Sources */,
 				E6DFA704238B114D008BF8AB /* MainTableVCCell.swift in Sources */,
 				E6DFA6F4238B0ED0008BF8AB /* MainTableVC.swift in Sources */,
 				E6DFA6F2238B0ED0008BF8AB /* AppDelegate.swift in Sources */,
+				E6AE59802397FD67007C01E3 /* MOImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +362,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E6AE59812397FE37007C01E3 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E6AE59822397FE38007C01E3 /* Image.xcdatamodel */,
+			);
+			currentVersion = E6AE59822397FE38007C01E3 /* Image.xcdatamodel */;
+			name = DataModel.xcdatamodeld;
+			path = ../DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E6DFA6E6238B0ED0008BF8AB /* Project object */;
 }
